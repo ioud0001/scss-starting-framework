@@ -1,0 +1,516 @@
+/* CSS Document */
+/* Scss Document */
+/* color settings */
+/* background settings */
+/* Scss Document */
+/* Scss Document */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block; }
+
+audio,
+canvas,
+video {
+  display: inline-block; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+[hidden], template {
+  display: none; }
+
+html {
+  background: #fff;
+  color: #000;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif; }
+
+body {
+  margin: 0; }
+
+a {
+  background: transparent; }
+  a:focus {
+    outline: thin dotted; }
+  a:hover, a:active {
+    outline: 0; }
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0; }
+
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0; }
+
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0; }
+
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0; }
+
+h6 {
+  font-size: 0.75em;
+  margin: 2.33em 0; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b,
+strong {
+  font-weight: bold; }
+
+dfn {
+  font-style: italic; }
+
+mark {
+  background: #ff0;
+  color: #000; }
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019"; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+small {
+  font-size: 80%; }
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+img {
+  border: 0; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+figure {
+  margin: 0; }
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+legend {
+  border: 0;
+  padding: 0;
+  white-space: normal; }
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline; }
+
+button, input {
+  line-height: normal; }
+
+button,
+select {
+  text-transform: none; }
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+button[disabled],
+input[disabled] {
+  cursor: default; }
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+textarea {
+  overflow: auto;
+  vertical-align: top; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+  input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none; }
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0; }
+
+/* Scss Document */
+.box svg {
+  margin: 0 auto 0 auto; }
+
+.iconic-script-body {
+  fill: yellow; }
+
+.iconic-cogs-cog-large {
+  fill: #bada55;
+  stroke: #bada55; }
+
+.iconic-cogs-cog-small {
+  fill: #666;
+  stroke: #bada55; }
+
+.tools {
+  fill: #F3A460;
+  stroke: magenta; }
+
+.tools:hover, .iconic-tools-screwdriver-handle:hover {
+  fill: blue; }
+
+.iconic-tools {
+  margin-left: auto;
+  margin-right: auto; }
+
+.iconic-tools-hammer-head, .iconic-tools-screwdriver-head {
+  fill: #C3C2C2; }
+
+.iconic-tools-screwdriver-handle {
+  fill: #F0BE52; }
+
+.four-rem .iconic {
+  width: 4rem;
+  height: 4rem; }
+
+.accent .iconic * {
+  /* default colour for all paths except 
+  the one referred to as the accent */
+  fill: #0066cc;
+  stroke: #0066cc; }
+
+.accent .iconic-property-accent {
+  fill: pink;
+  stroke: pink; }
+
+#toolkit {
+  background-image: url("../images/tools.svg");
+  background-repeat: no-repeat; }
+
+#cogs {
+  background-image: url("../images/cogs.svg");
+  background-repeat: no-repeat; }
+
+/* Scss Document */
+html, body {
+  height: 100%; }
+
+.wrapper:after {
+  content: "";
+  display: block; }
+
+.site-footer, .wrapper:after {
+  /* .push must be the same height as footer */
+  height: 142px; }
+
+.site-footer {
+  background: orange;
+  text-align: center; }
+
+/* layout */
+html {
+  background-color: #ECA100;
+  background: -webkit-linear-gradient(red, #ECA100);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(red, #ECA100);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(red, #ECA100);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(red, #ECA100);
+  /* Standard syntax */
+  background: -webkit-linear-gradient(#ECA100, red);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#ECA100, red);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#ECA100, red);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#ECA100, red);
+  /* Standard syntax */
+  height: 1000px; }
+
+.clearfix:after, .col-container:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto 0 auto;
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -142px; }
+
+main {
+  height: 100%;
+  overflow: auto; }
+
+.middle {
+  width: 100%;
+  display: block;
+  clear: both; }
+
+.masthead {
+  background-color: #FFDEA1;
+  border-radius: 10px;
+  padding-top: 30px; }
+
+.masthead hgroup {
+  text-align: center; }
+
+.masthead hgroup img {
+  margin-left: auto;
+  margin-right: auto; }
+
+.masthead hgroup h2, .site-footer p {
+  font-family: 'Rajdhani', sans-serif; }
+
+.site-footer p {
+  font-weight: 800; }
+
+.row1 {
+  height: 120px; }
+
+.box {
+  display: block;
+  float: left;
+  margin: 2rem;
+  width: 300px;
+  height: 200px;
+  background-color: #FFE4BA;
+  border-radius: 10px;
+  padding-top: 30px; }
+
+.box p {
+  padding: 1rem;
+  font-family: calibri,sans-serif;
+  color: #666; }
+
+.col-3 .box {
+  width: 28.66667%;
+  margin-left: 2%;
+  /* Remove Spacing from First Child*/ }
+  .col-3 .box:first-child {
+    margin-left: 0; }
+
+.col-4 .box {
+  width: 3.5%;
+  margin-left: 2%;
+  /* Remove Spacing from First Child*/
+  background-color: #C52326; }
+  .col-4 .box:first-child {
+    margin-left: 0; }
+
+/* View Effects */
+.view {
+  margin: 10px;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center; }
+
+.view .mask, .view .content {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0; }
+
+.view img {
+  display: block;
+  position: relative; }
+
+.view h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  font-family: Raleway, serif;
+  padding: 10px;
+  margin: 20px 0 0 0; }
+
+.view p {
+  position: relative;
+  padding: 0px 20px 0px;
+  text-align: left; }
+
+/* Hover effects */
+.box:hover {
+  cursor: pointer; }
+
+.box:hover mask3, .box:focus mask3, .box:active mask3 {
+  transition: all 0.5s ease-out;
+  -webkit-animation-timing-function: ease;
+  /* Chrome, Safari, Opera */
+  animation-timing-function: linear; }
+
+.box:hover p, .box:hover a:link, .box:focus p, .box:focus a:link, .box:active p, .box:active a:link {
+  color: #4A2603;
+  font-size: medium;
+  	/*transition: color 0.1s 0.1s ease-out,
+                text-shadow 0.2s 0.2s ease-out;*/
+  transition: all 0.3s ease;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1); }
+
+.box:hover h3, .box:active h3, .box:focus h3 {
+  font-family: 'Nova Mono', sans-serif;
+  font-size: large;
+  background-color: #B17011;
+  background: -webkit-linear-gradient(#B17011, #F3B171);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#B17011, #F3B171);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#B17011, #F3B171);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#B17011, #F3B171);
+  /* Standard syntax */
+  color: white;
+  margin-top: 0px;
+  text-shadow: #6F4E06 2px 2px;
+  box-shadow: #B17011 0px 2px;
+  transition: color 0.1s .1s ease-in, text-shadow 0.2s 0.2s ease-out;
+  transform: matrix;
+  text-transform: uppercase; }
+
+/* The masks are used as filters for the boxes to add abstract designs */
+.box:hover .mask1, .box:focus .mask1, .box:active .mask1 {
+  opacity: .6;
+  background-color: #E5A400;
+  overflow: hidden;
+  transform: translate(100px, -175px);
+  width: 100px;
+  height: 100px;
+  transition: color 0.4s 3s ease-in;
+  position: absolute;
+  animation: flicker 1.1s infinite;
+  animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  border-radius: 100px; }
+
+.box:hover .mask2, .box:focus .mask2, .box:active .mask2 {
+  opacity: 0.8;
+  background-color: #F4B924;
+  overflow: hidden;
+  transform: translate(1px, -205px) rotate(10deg) scale(2.5);
+  width: 500px;
+  height: 300px;
+  transition: color 0.4s 8s ease-in;
+  position: absolute;
+  box-decoration-break: clone; }
+
+.box:hover .mask3, .box:focus .mask3, .box:active .mask3 {
+  opacity: .5;
+  transform: translate(-10px, -135px);
+  width: 180px;
+  height: 180px;
+  /*transition: color 0.4s 8s ease-in;*/
+  position: absolute;
+  /*animation: flicker 1.1s infinite;*/
+  background: -webkit-linear-gradient(red, #ECA100);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(red, #ECA100);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(red, #ECA100);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(red, #ECA100);
+  /* Standard syntax */
+  border-radius: 180px; }
+
+.content .mask {
+  background-color: transparent;
+  padding: 5px; }
+
+/* content styles */
+.content p, .content h3, .content p a:link {
+  color: transparent;
+  text-shadow: 0 0 0 transparent;
+  font-size: small;
+  overflow: hidden; }
+
+@media all and (min-width: 961px) {
+  .col-3.box {
+    width: 31.13333%;
+    margin-left: 0.8%;
+    /* Remove Spacing from First Child*/ }
+    .col-3.box:first-child {
+      margin-left: 0; }
+
+  .col-4.box {
+    width: 22.95%;
+    margin-left: 0.4%;
+    /* Remove Spacing from First Child*/ }
+    .col-4.box:first-child {
+      margin-left: 0; } }
+@media all and (max-width: 960px) {
+  .col-3.box {
+    width: 31.13333%;
+    margin-left: 0.8%;
+    /* Remove Spacing from First Child*/ }
+    .col-3.box:first-child {
+      margin-left: 0; }
+
+  .col-4.box {
+    width: 22.95%;
+    margin-left: 0.4%;
+    /* Remove Spacing from First Child*/ }
+    .col-4.box:first-child {
+      margin-left: 0; } }
+
+/*# sourceMappingURL=main.css.map */

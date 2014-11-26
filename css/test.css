@@ -1,0 +1,72 @@
+@charset "utf-8";
+/* CSS Document */
+.box{
+  width: 200px;
+  height: 200px;
+  background: red;
+  -webkit-animation-name: fade-in;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-out;
+  -webkit-animation-delay: 0s;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  background: url(http://lorempixel.com/200/200/);
+}
+
+
+
+.box-content{
+  position:absolute;
+  background: #111;
+  text-align: center;
+  width: 200px;
+  height: 50px;
+  opacity: 0.8;
+  color: #fff;
+  -webkit-transform: translate(0,300px);
+  -webkit-animation-name: slide-out;
+  -webkit-animation-duration: 0.15s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in;
+  -webkit-animation-delay: 0;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.box:hover .box-content{
+  -webkit-animation-name: slide-in;
+  -webkit-animation-duration: 0.25s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-out;
+  -webkit-animation-delay: 0;
+  -webkit-animation-fill-mode: forwards;
+}
+
+
+@-webkit-keyframes fade-in {
+  0%   { opacity: 0; }
+  80% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+@-webkit-keyframes slide-in {
+    0% {
+        -webkit-transform: translate(0,300px);
+    }
+ 
+    100% {
+       -webkit-transform: translate(0, 150px);
+    }
+}
+
+@-webkit-keyframes slide-out {
+    0% {
+        -webkit-transform: translate(0, 150px);
+    }
+ 
+    100% {
+       -webkit-transform: translate(0, 300px);
+    }
+}

@@ -1,0 +1,17 @@
+/* Scss Document */
+html, body {
+  height: 100%; }
+
+.wrapper:after {
+  content: "";
+  display: block; }
+
+.site-footer, .wrapper:after {
+  /* .push must be the same height as footer */
+  height: 142px; }
+
+.site-footer {
+  background: orange;
+  text-align: center; }
+
+/*# sourceMappingURL=sticky-footer.css.map */

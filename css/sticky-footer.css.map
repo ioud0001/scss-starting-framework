@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";AACA,UAAW;EACV,MAAM,EAAE,IAAI;;AAGb,cAAe;EACb,OAAO,EAAE,EAAE;EACX,OAAO,EAAE,KAAK;;AAEhB,4BAA6B;;EAE5B,MAAM,EAAE,KAAK;;AAGd,YAAa;EACX,UAAU,EAAE,MAAM;EAClB,UAAU,EAAE,MAAM",
+"sources": ["../scss/sticky-footer.scss"],
+"names": [],
+"file": "sticky-footer.css"
+}
