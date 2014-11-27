@@ -1,21 +1,18 @@
 /*
 Error: Undefined variable: "$ochreshade".
-        on line 6 of scss/svg-config.scss
+        on line 3 of scss/template.scss
 
-1: /* Scss Document *\/
-2: .box svg{
-3: 	margin: 0 auto 0 auto;
-4: }
-5: .iconic-script-body{
-6: 	fill: $ochreshade;
-7: }
-8: .iconic-cogs-cog-large{
-9:   fill: $darkgrey;
-10:   stroke:$darkgrey;
-11: }
+1: /* layout *\/
+2: html{
+3:   	  background-color: $ochreshade;
+4: 	  background: -webkit-linear-gradient($red, $ochreshade); /* For Safari 5.1 to 6.0 *\/
+5:   background: -o-linear-gradient($red, $ochreshade); /* For Opera 11.1 to 12.0 *\/
+6:   background: -moz-linear-gradient($red, $ochreshade); /* For Firefox 3.6 to 15 *\/
+7:   background: linear-gradient(red, $ochreshade); /* Standard syntax *\/
+8:   
 
 Backtrace:
-scss/svg-config.scss:6
+scss/template.scss:3
 C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:384:in `visit_prop'
@@ -67,4 +64,4 @@ C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.7/vendor/listen/lib/listen/adapter.r
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$ochreshade\".\A         on line 6 of scss/svg-config.scss\A \A 1: /* Scss Document */\A 2: .box svg{\A 3: 	margin: 0 auto 0 auto;\A 4: }\A 5: .iconic-script-body{\A 6: 	fill: $ochreshade;\A 7: }\A 8: .iconic-cogs-cog-large{\A 9:   fill: $darkgrey;\A 10:   stroke:$darkgrey;\A 11: }"; }
+  content: "Error: Undefined variable: \"$ochreshade\".\A         on line 3 of scss/template.scss\A \A 1: /* layout */\A 2: html{\A 3:   	  background-color: $ochreshade;\A 4: 	  background: -webkit-linear-gradient($red, $ochreshade); /* For Safari 5.1 to 6.0 */\A 5:   background: -o-linear-gradient($red, $ochreshade); /* For Opera 11.1 to 12.0 */\A 6:   background: -moz-linear-gradient($red, $ochreshade); /* For Firefox 3.6 to 15 */\A 7:   background: linear-gradient(red, $ochreshade); /* Standard syntax */\A 8:   "; }

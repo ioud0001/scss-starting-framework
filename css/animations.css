@@ -1,21 +1,20 @@
 /*
-Error: Undefined variable: "$ochreshade".
-        on line 6 of scss/svg-config.scss
+Error: Undefined variable: "$orange".
+        on line 5 of scss/animations.scss
 
 1: /* Scss Document *\/
-2: .box svg{
-3: 	margin: 0 auto 0 auto;
-4: }
-5: .iconic-script-body{
-6: 	fill: $ochreshade;
+2: /* Animations *\/ 
+3: button:hover, button:focus, button:active{
+4: 	background-color: black;
+5: 	color: $orange;
+6: 	
 7: }
-8: .iconic-cogs-cog-large{
-9:   fill: $darkgrey;
-10:   stroke:$darkgrey;
-11: }
+8: 
+9: 
+10: .row1 .box:hover{
 
 Backtrace:
-scss/svg-config.scss:6
+scss/animations.scss:5
 C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:384:in `visit_prop'
@@ -67,4 +66,4 @@ C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.7/vendor/listen/lib/listen/adapter.r
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$ochreshade\".\A         on line 6 of scss/svg-config.scss\A \A 1: /* Scss Document */\A 2: .box svg{\A 3: 	margin: 0 auto 0 auto;\A 4: }\A 5: .iconic-script-body{\A 6: 	fill: $ochreshade;\A 7: }\A 8: .iconic-cogs-cog-large{\A 9:   fill: $darkgrey;\A 10:   stroke:$darkgrey;\A 11: }"; }
+  content: "Error: Undefined variable: \"$orange\".\A         on line 5 of scss/animations.scss\A \A 1: /* Scss Document */\A 2: /* Animations */ \A 3: button:hover, button:focus, button:active{\A 4: 	background-color: black;\A 5: 	color: $orange;\A 6: 	\A 7: }\A 8: \A 9: \A 10: .row1 .box:hover{"; }

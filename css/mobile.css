@@ -1,24 +1,26 @@
 /*
-Error: Undefined variable: "$ochreshade".
-        on line 6 of scss/svg-config.scss
+Error: Undefined mixin 'equalSpaced'.
+        on line 4 of scss/mobile.scss, in `equalSpaced'
+        from line 4 of scss/mobile.scss
 
 1: /* Scss Document *\/
-2: .box svg{
-3: 	margin: 0 auto 0 auto;
-4: }
-5: .iconic-script-body{
-6: 	fill: $ochreshade;
-7: }
-8: .iconic-cogs-cog-large{
-9:   fill: $darkgrey;
-10:   stroke:$darkgrey;
-11: }
+2: @media all and (min-width: 961px){
+3: 	.col-3.box{
+4: 		 @include equalSpaced(3, 3%, 92%);	
+5: 	}
+6: 	.col-4.box:first-child{
+7: 		display: block;
+8: 	}
+9: 	.col-4.box{
 
 Backtrace:
-scss/svg-config.scss:6
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/script/tree/variable.rb:49:in `_perform'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/script/tree/node.rb:50:in `perform'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:384:in `visit_prop'
+scss/mobile.scss:4:in `equalSpaced'
+scss/mobile.scss:4
+C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:338:in `block in visit_mixin'
+C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/stack.rb:98:in `block in with_mixin'
+C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/stack.rb:98:in `with_mixin'
+C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:336:in `visit_mixin'
 C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
 C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/stack.rb:79:in `block in with_base'
@@ -30,6 +32,20 @@ C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:
 C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:420:in `block in visit_rule'
 C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
 C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:418:in `visit_rule'
+C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:502:in `visit_media'
 C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
 C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/stack.rb:79:in `block in with_base'
@@ -67,4 +83,4 @@ C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.7/vendor/listen/lib/listen/adapter.r
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$ochreshade\".\A         on line 6 of scss/svg-config.scss\A \A 1: /* Scss Document */\A 2: .box svg{\A 3: 	margin: 0 auto 0 auto;\A 4: }\A 5: .iconic-script-body{\A 6: 	fill: $ochreshade;\A 7: }\A 8: .iconic-cogs-cog-large{\A 9:   fill: $darkgrey;\A 10:   stroke:$darkgrey;\A 11: }"; }
+  content: "Error: Undefined mixin 'equalSpaced'.\A         on line 4 of scss/mobile.scss, in `equalSpaced'\A         from line 4 of scss/mobile.scss\A \A 1: /* Scss Document */\A 2: @media all and (min-width: 961px){\A 3: 	.col-3.box{\A 4: 		 @include equalSpaced(3, 3%, 92%);	\A 5: 	}\A 6: 	.col-4.box:first-child{\A 7: 		display: block;\A 8: 	}\A 9: 	.col-4.box{"; }
